@@ -13,19 +13,17 @@ const getGamesFromApi = () => async (dispatch) => {
 
   const gamesList = await response.results;
 
-  dispatch(fetchGames(gamesList));
-
-  // dispatch(
-  //   fetchGames(
-  //     gamesList.map(({
-  //       id, name, background_image,
-  //     }) => ({
-  //       id,
-  //       gameName: name,
-  //       image: background_image,
-  //     })),
-  //   ),
-  // );
+  dispatch(
+    fetchGames(
+      gamesList.map(({
+        id, name, background_image,
+      }) => ({
+        id,
+        gameName: name,
+        image: background_image,
+      })),
+    ),
+  );
 
   return null;
 };
