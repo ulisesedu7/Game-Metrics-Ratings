@@ -1,14 +1,17 @@
 /* eslint-disable camelcase */
 import { fetchGames } from '../redux/games/games.reducer';
+import { fetchCategories } from '../redux/categories/categories.reducer';
 
 // Base URL
 // const baseUrl = 'https://api.rawg.io/api/games?key=beb4844ef73a431fb1c24f5674e2d9a7';
 
-const baseUrl2 = 'https://api.rawg.io/api/games?key=beb4844ef73a431fb1c24f5674e2d9a7&page_size=5';
+const gamesUrl = 'https://api.rawg.io/api/games?key=beb4844ef73a431fb1c24f5674e2d9a7&page_size=5';
 
-// API Action
+const categoryUrl = '';
+
+// API Action for games
 const getGamesFromApi = () => async (dispatch) => {
-  const data = await fetch(baseUrl2);
+  const data = await fetch(gamesUrl);
   const response = await data.json();
 
   const gamesList = await response.results;
@@ -28,4 +31,14 @@ const getGamesFromApi = () => async (dispatch) => {
   return null;
 };
 
-export default getGamesFromApi;
+// API Action for categories
+const getCategoriesFromApi = () => async (dispatch) => {
+  const data = await fetch(categoryUrl);
+  const response = await data.json();
+
+  const categoriesList = await response.results;
+
+  return null;
+};
+
+export { getGamesFromApi, getCategoriesFromApi };
