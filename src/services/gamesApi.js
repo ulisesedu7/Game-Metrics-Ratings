@@ -2,7 +2,7 @@
 import { fetchGames } from '../redux/games/games.reducer';
 
 // Base URL
-const gamesUrl = 'https://api.rawg.io/api/games?key=beb4844ef73a431fb1c24f5674e2d9a7&page_size=6';
+const gamesUrl = 'https://api.rawg.io/api/games?key=beb4844ef73a431fb1c24f5674e2d9a7&page_size=12';
 
 // API Action for games
 const getGamesFromApi = () => async (dispatch) => {
