@@ -36,24 +36,39 @@ const getGamesFromApi = () => async (dispatch) => {
 const getGameDetailsFromApi = (id) => async (dispatch) => {
   const gameUrl = gameDetailsUrl + id + apiKey;
   console.log(gameUrl);
-  // const data = await fetch(gameUrl);
-  // const response = await data.json();
+  const data = await fetch(gameUrl);
+  const response = await data.json();
 
   const gameDetails = await response.results;
   console.log(gameDetails);
 
-  // dispatch(
-  //   fetchGamesDetails(
-  //     gameDetails.map(({
-  //       id, name, rating, background_image,
-  //     }) => ({
-  //       id,
-  //       gameName: name,
-  //       rating,
-  //       gameImage: background_image,
-  //     })),
-  //   ),
-  // );
+  dispatch(
+    fetchGamesDetails(
+      gameDetails.map(({
+        id,
+        name,
+        rating,
+        background_image,
+        description_raw,
+        released,
+        metacritic,
+        playtime,
+        developers,
+        platforms,
+      }) => ({
+        id,
+        gameName: name,
+        rating,
+        gameImage: background_image,
+        description: description_raw,
+        releasedDate: released,
+        metacritic,
+        averagePlayTime: playtime,
+        developers,
+        platforms,
+      })),
+    ),
+  );
 
   return null;
 };
