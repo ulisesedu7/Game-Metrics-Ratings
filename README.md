@@ -1,30 +1,59 @@
-# Metrics App
+![](https://img.shields.io/badge/Microverse-blueviolet)
+# Game Metrics
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> This repository contains an web app that will show you a list of video games with their user rating and also you'll be able to check for more details if you click on any game like the released date, metacritic score, etc...
 
-## Available Scripts
+## Built With
 
-In the project directory, you can run:
+- React.js
+- HTML
+- CSS
+- Javascript
+- Git & Github
 
-### `npm start`
+## Live Demo -- Not Yet
+```
+Check the live demo of my page [here]()
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Setup
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Follow these steps on your console to properly clone this repository on your desktop:
 
-### `npm test`
+```
+$ git clone 'repo_path'
+$ cd 'repo_name'
+$ code .
+Run 'npm i' to install the dev dependencies.
+Run 'npm start' to run the website from your local machine.
+Run 'npm run build' to build the code after editing it.
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Author
 
-### `npm run build`
+👤 **Ulises Largaespada**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- GitHub: [@ulisesedu7](https://github.com/ulisesedu7)
+- Twitter: [@LongswordMusic](https://twitter.com/LongswordMusic)
+- LinkedIn: [Ulises Largaespada](https://www.linkedin.com/in/ulises-largaespada-45570b1a4/)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🤝 Contributing
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](../../issues/).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- Origin design by [Nelson Sakwa on Behance](https://www.behance.net/sakwadesignstudio)
+- Hat tip to anyone whose code was used
+- Microverse
+- My supportive family 😊
+
+## 📝 License
+
+This project is [MIT](./MIT.md) licensed.
