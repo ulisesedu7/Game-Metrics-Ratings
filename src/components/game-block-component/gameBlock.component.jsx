@@ -13,18 +13,18 @@ const GameBlock = (props) => {
 
   const dispatch = useDispatch();
 
-  const handleClick = (id) => {
-    dispatch(getGameDetailsFromApi(id));
-  };
+  // const handleClick = (id) => {
+  //   dispatch(getGameDetailsFromApi(id));
+  // };
 
   return (
     <section className="game-container">
       <Link
         to="/game-details"
         className="game-link-a"
-        onClick={() => {
-          handleClick(id);
-        }}
+        // onClick={() => {
+        //   handleClick(id);
+        // }}
       >
         <img src={gameImage} alt="Category visual description" className="game-image" />
         <FaRegArrowAltCircleRight className="arrow-top" />
