@@ -11,10 +11,11 @@
 - Javascript
 - Git & Github
 
-## Live Demo -- Not Yet
-```
-Check the live demo of my page [here]()
-```
+## Live Demo
+
+- Check the live demo of my page [here](https://ulisesedu7-game-metrics.netlify.app/)
+
+- Also, you can watch a video demo of the app [here](https://drive.google.com/file/d/1eXX4yiBp0Futmf6DdNnPXxUT_sSYW101/view?usp=sharing)
 
 ## Setup
 
