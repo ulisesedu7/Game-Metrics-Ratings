@@ -17,11 +17,18 @@
   position: absolute;
   width: 100%;
   height: 100%;
+  max-width: 50rem;
   border-radius: 0.5rem;
+  margin-top: 1rem;
 }
 
 .back-arrow {
   position: absolute;
+  font-size: 2rem;
+  color: #fdfbfe;
+  top: -1.5rem;
+  left: 0;
+  z-index: 2;
 }
 
 .info-container {
@@ -37,4 +44,9 @@
 
 .rates-container {
   margin-right: 1rem;
+}
+
+.main-description {
+  line-height: 1.3rem;
+  padding: 0 1.1rem;
 }
