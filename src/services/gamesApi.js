@@ -41,34 +41,6 @@ const getGameDetailsFromApi = (id) => async (dispatch) => {
 
   const gameDetails = await response;
 
-  // dispatch(
-  //   fetchGamesDetails(
-  //     gameDetails.map(({
-  //       id,
-  //       name,
-  //       rating,
-  //       background_image,
-  //       description_raw,
-  //       released,
-  //       metacritic,
-  //       playtime,
-  //       developers,
-  //       platforms,
-  //     }) => ({
-  //       id,
-  //       gameName: name,
-  //       rating,
-  //       gameImage: background_image,
-  //       description: description_raw,
-  //       releasedDate: released,
-  //       metacritic,
-  //       averagePlayTime: playtime,
-  //       developers,
-  //       platforms,
-  //     })),
-  //   ),
-  // );
-
   dispatch(fetchGamesDetails(gameDetails));
 
   return null;

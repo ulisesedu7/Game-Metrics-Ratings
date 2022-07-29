@@ -7,7 +7,6 @@ const stylesMarginFix = {
 
 const DetailsPage = () => (
   <section style={stylesMarginFix}>
-    <h1>This is the details Page of each game</h1>
     <GameDetails />
   </section>
 );
