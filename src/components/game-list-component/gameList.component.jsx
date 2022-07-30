@@ -8,7 +8,7 @@ const GamesList = ({ handleFilter }) => {
   const allGames = useSelector((state) => state.games.gamesList);
   const filterInput = useRef();
 
-  const [filtered, setFiltered] = useState(allGames);
+  const [filtered, setFiltered] = useState(21);
 
   const returnFilterData = (allGames, minRate) => {
     const filteredGames = handleFilter(allGames, minRate);
@@ -34,7 +34,7 @@ const GamesList = ({ handleFilter }) => {
       </div>
 
       <section className="game-list-container">
-        {(filtered.length) ? (
+        {(filtered !== 21) ? (
           filtered.map((game) => (
             <GameBlock
               title={game.gameName}

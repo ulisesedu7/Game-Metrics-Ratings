@@ -17,6 +17,7 @@ const getGamesFromApi = () => async (dispatch) => {
 
   const gamesList = await response.results;
 
+  // Dispatch 1st page
   dispatch(
     fetchGames(
       gamesList.map(({
